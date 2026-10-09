@@ -56,7 +56,7 @@
                         <i class="fa-solid fa-shopping-cart"></i>
                         <span id="cart-count" class="absolute -top-2 -right-2 bg-copper text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
                     </button>
-                    <button id="theme-toggle" aria-label="Toggle Theme" class="hover:text-copper transition-colors">
+                    <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 hover:text-copper transition-colors">
                         <i id="theme-icon" class="fa-solid fa-moon"></i>
                     </button>
                 </div>
@@ -116,7 +116,7 @@
                         <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=600&auto=format&fit=crop" alt="Microphones" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
-                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Studio Microphones</h3>
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2 min-h-[3.5rem]">Studio Microphones</h3>
                             <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Capture every nuance.</p>
                             <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
@@ -125,7 +125,7 @@
                         <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=600&auto=format&fit=crop" alt="Headphones" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
-                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Pro Headphones</h3>
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2 min-h-[3.5rem]">Pro Headphones</h3>
                             <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Reference-grade monitoring.</p>
                             <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
@@ -134,7 +134,7 @@
                         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop" alt="Interfaces" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
-                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Audio Interfaces</h3>
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2 min-h-[3.5rem]">Audio Interfaces</h3>
                             <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">High-fidelity conversion.</p>
                             <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
@@ -143,7 +143,7 @@
                         <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=600&auto=format&fit=crop" alt="Accessories" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
-                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Accessories</h3>
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2 min-h-[3.5rem]">Accessories</h3>
                             <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Essential studio gear.</p>
                             <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
                         </div>
@@ -163,78 +163,78 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Product 1 -->
-                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
-                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=400&auto=format&fit=crop" alt="Mic" class="h-40 w-auto object-contain">
+                    <div class="bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col overflow-hidden">
+                        <div class="relative mb-6 h-48 bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=400&auto=format&fit=crop" alt="Mic" class="w-full h-full object-cover">
                             <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
                         </div>
-                        <div class="flex flex-col flex-grow">
+                        <div class="flex flex-col flex-grow px-6 pb-6">
                             <div class="flex items-center gap-1 text-copper text-xs mb-2">
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 <span class="text-gray-500 dark:text-gray-400 ml-1">(128)</span>
                             </div>
-                            <h3 class="font-manrope font-bold text-lg mb-1">SONAVEX Pro Mic</h3>
+                            <h3 class="font-manrope font-bold text-lg mb-1 min-h-[3.5rem]">SONAVEX Pro Mic</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Large-diaphragm condenser microphone.</p>
                             <div class="flex items-center justify-between mt-auto">
                                 <span class="font-bold text-xl">$299.00</span>
-                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper dark:hover:bg-copper dark:hover:text-white transition-colors">Add to Cart</button>
+                                <button class="add-to-cart whitespace-nowrap bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper dark:hover:bg-copper dark:hover:text-white transition-colors">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     <!-- Product 2 -->
-                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
-                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop" alt="Headphones" class="h-40 w-auto object-contain">
+                    <div class="bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col overflow-hidden">
+                        <div class="relative mb-6 h-48 bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop" alt="Headphones" class="w-full h-full object-cover">
                             <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
                         </div>
-                        <div class="flex flex-col flex-grow">
+                        <div class="flex flex-col flex-grow px-6 pb-6">
                             <div class="flex items-center gap-1 text-copper text-xs mb-2">
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                                 <span class="text-gray-500 dark:text-gray-400 ml-1">(94)</span>
                             </div>
-                            <h3 class="font-manrope font-bold text-lg mb-1">Monitor Headphones</h3>
+                            <h3 class="font-manrope font-bold text-lg mb-1 min-h-[3.5rem]">Monitor Headphones</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Closed-back reference headphones.</p>
                             <div class="flex items-center justify-between mt-auto">
                                 <span class="font-bold text-xl">$199.00</span>
-                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                                <button class="add-to-cart whitespace-nowrap bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     <!-- Product 3 -->
-                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
-                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop" alt="Interface" class="h-40 w-auto object-contain">
+                    <div class="bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col overflow-hidden">
+                        <div class="relative mb-6 h-48 bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop" alt="Interface" class="w-full h-full object-cover">
                             <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
                         </div>
-                        <div class="flex flex-col flex-grow">
+                        <div class="flex flex-col flex-grow px-6 pb-6">
                             <div class="flex items-center gap-1 text-copper text-xs mb-2">
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                 <span class="text-gray-500 dark:text-gray-400 ml-1">(210)</span>
                             </div>
-                            <h3 class="font-manrope font-bold text-lg mb-1">Audio Interface</h3>
+                            <h3 class="font-manrope font-bold text-lg mb-1 min-h-[3.5rem]">Audio Interface</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">2x2 USB-C Audio Interface with preamps.</p>
                             <div class="flex items-center justify-between mt-auto">
                                 <span class="font-bold text-xl">$149.00</span>
-                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                                <button class="add-to-cart whitespace-nowrap bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     <!-- Product 4 -->
-                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
-                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=400&auto=format&fit=crop" alt="Kit" class="h-40 w-auto object-contain">
+                    <div class="bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col overflow-hidden">
+                        <div class="relative mb-6 h-48 bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=400&auto=format&fit=crop" alt="Kit" class="w-full h-full object-cover">
                             <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
                         </div>
-                        <div class="flex flex-col flex-grow">
+                        <div class="flex flex-col flex-grow px-6 pb-6">
                             <div class="flex items-center gap-1 text-copper text-xs mb-2">
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                                 <span class="text-gray-500 dark:text-gray-400 ml-1">(45)</span>
                             </div>
-                            <h3 class="font-manrope font-bold text-lg mb-1">Podcast Kit</h3>
+                            <h3 class="font-manrope font-bold text-lg mb-1 min-h-[3.5rem]">Podcast Kit</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Complete bundle for beginner podcasters.</p>
                             <div class="flex items-center justify-between mt-auto">
                                 <span class="font-bold text-xl">$399.00</span>
-                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                                <button class="add-to-cart whitespace-nowrap bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -294,22 +294,22 @@
                     <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Compare Models</h2>
                     <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Find the perfect match for your acoustic needs.</p>
                 </div>
-                <div class="overflow-x-auto pb-4">
+                <div class="overflow-x-auto pb-4 pt-4">
                     <table class="w-full min-w-[800px] text-left border-collapse">
                         <thead>
                             <tr class="border-b-2 border-gray-200 dark:border-gray-800">
-                                <th class="p-4 font-manrope text-xl text-gray-500 w-1/4">Features</th>
+                                <th class="p-4 font-manrope text-xl text-gray-500 w-1/4 align-bottom">Features</th>
                                 <th class="p-4 w-1/4">
-                                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2">
+                                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=200&auto=format&fit=crop" alt="Pro Mic" class="w-24 h-24 object-cover rounded-lg mb-3">
                                     <h3 class="font-manrope font-bold text-lg">Pro Mic</h3>
                                 </th>
-                                <th class="p-4 w-1/4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10 rounded-t-xl relative">
-                                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-copper text-white text-xs px-3 py-1 rounded-full whitespace-nowrap">Most Popular</div>
-                                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2 mx-auto">
-                                    <h3 class="font-manrope font-bold text-lg text-center">Studio Mic</h3>
+                                <th class="p-4 w-1/4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10 rounded-t-xl relative pt-6">
+                                    <div class="absolute top-0 left-4 transform -translate-y-1/2 bg-copper text-white text-xs px-3 py-1 rounded-full whitespace-nowrap shadow-sm">Most Popular</div>
+                                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=200&auto=format&fit=crop" alt="Studio Mic" class="w-24 h-24 object-cover rounded-lg mb-3">
+                                    <h3 class="font-manrope font-bold text-lg">Studio Mic</h3>
                                 </th>
                                 <th class="p-4 w-1/4">
-                                    <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2">
+                                    <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=200&auto=format&fit=crop" alt="Broadcast Mic" class="w-24 h-24 object-cover rounded-lg mb-3">
                                     <h3 class="font-manrope font-bold text-lg">Broadcast Mic</h3>
                                 </th>
                             </tr>
@@ -366,7 +366,7 @@
                         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop" alt="Acoustics" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <span class="text-xs font-bold uppercase text-copper mb-2 block">Room Acoustics</span>
-                            <h3 class="font-manrope font-bold text-xl mb-3">Mastering Room Treatment</h3>
+                            <h3 class="font-manrope font-bold text-xl mb-3 min-h-[3.5rem]">Mastering Room Treatment</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Learn how to eliminate echo and standing waves using simple acoustic panels in your home studio.</p>
                             <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
                         </div>
@@ -375,7 +375,7 @@
                         <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=600&auto=format&fit=crop" alt="Mics" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <span class="text-xs font-bold uppercase text-copper mb-2 block">Microphones</span>
-                            <h3 class="font-manrope font-bold text-xl mb-3">Condenser vs. Dynamic</h3>
+                            <h3 class="font-manrope font-bold text-xl mb-3 min-h-[3.5rem]">Condenser vs. Dynamic</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Which microphone type is right for your podcasting style? We break down the technical differences.</p>
                             <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
                         </div>
@@ -384,7 +384,7 @@
                         <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop" alt="Headphones" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
                             <span class="text-xs font-bold uppercase text-copper mb-2 block">Monitoring</span>
-                            <h3 class="font-manrope font-bold text-xl mb-3">The Importance of Isolation</h3>
+                            <h3 class="font-manrope font-bold text-xl mb-3 min-h-[3.5rem]">The Importance of Isolation</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Why closed-back headphones are essential for tracking vocals without microphone bleed.</p>
                             <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
                         </div>
@@ -555,7 +555,7 @@
     <!-- Section 10: Footer -->
     <footer class="bg-gray-100 dark:bg-secondary text-gray-600 dark:text-gray-300 pt-16 pb-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
                 <div>
                     <a href="#home" class="flex items-center gap-2 mb-6 text-secondary dark:text-white group">
                         <i class="fa-solid fa-wave-square text-copper text-2xl"></i>
@@ -595,7 +595,7 @@
                     <h4 class="font-manrope font-bold text-secondary dark:text-white text-lg mb-6">Stay Tuned</h4>
                     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Subscribe to get special offers, free giveaways, and new product announcements.</p>
                     <form id="newsletter-form" class="relative">
-                        <input type="email" required placeholder="Enter your email" class="w-full bg-white dark:bg-white/5 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-sm text-secondary dark:text-white focus:outline-none focus:border-copper pr-24">
+                        <input type="email" required placeholder="Enter your email" class="w-full bg-white dark:bg-white/5 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-sm text-secondary dark:text-white focus:outline-none focus:border-copper pr-28">
                         <button type="submit" class="absolute right-1 top-1 bottom-1 bg-copper text-white px-4 rounded-md text-sm font-medium hover:bg-secondary dark:hover:bg-white hover:text-white dark:hover:text-secondary transition-colors">Subscribe</button>
                     </form>
                     <div class="mt-6 text-sm text-gray-500 dark:text-gray-400">
@@ -607,10 +607,10 @@
 
             <div class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
                 <p>&copy; <script>document.write(new Date().getFullYear())</script> SONAVEX. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Cookie Policy</a>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <a href="#" class="whitespace-nowrap hover:text-secondary dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="whitespace-nowrap hover:text-secondary dark:hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="whitespace-nowrap hover:text-secondary dark:hover:text-white transition-colors">Cookie Policy</a>
                 </div>
             </div>
         </div>
