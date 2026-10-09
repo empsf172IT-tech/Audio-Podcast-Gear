@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONAVEX | Premium Audio & Podcast Equipment</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Discover premium, precision-engineered audio gear designed for creators, storytellers, and professional podcasters.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7F5F0',
+                        secondary: '#222222',
+                        copper: '#B77B55',
+                        darkBg: '#1a1a1a',
+                        darkCard: '#2a2a2a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        manrope: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-primary text-secondary dark:bg-darkBg dark:text-primary transition-colors duration-300 antialiased">
+
+    <!-- Section 1: Premium Navigation Bar -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-primary/80 dark:bg-darkBg/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="flex items-center gap-2 group">
+                        <i class="fa-solid fa-wave-square text-copper text-2xl group-hover:scale-110 transition-transform"></i>
+                        <span class="font-manrope font-bold text-2xl tracking-tight text-secondary dark:text-primary">SONAVEX</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active font-medium text-sm hover:text-copper transition-colors">Home</a>
+                    <a href="#categories" class="nav-link font-medium text-sm hover:text-copper transition-colors">Categories</a>
+                    <a href="#shop" class="nav-link font-medium text-sm hover:text-copper transition-colors">Shop</a>
+                    <a href="#showcase" class="nav-link font-medium text-sm hover:text-copper transition-colors">Showcase</a>
+                    <a href="#compare" class="nav-link font-medium text-sm hover:text-copper transition-colors">Compare</a>
+                    <a href="#guides" class="nav-link font-medium text-sm hover:text-copper transition-colors">Guides</a>
+                    <a href="#warranty" class="nav-link font-medium text-sm hover:text-copper transition-colors">Warranty</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-6">
+                    <button aria-label="Search" class="hover:text-copper transition-colors"><i class="fa-solid fa-search"></i></button>
+                    <button aria-label="Cart" class="relative hover:text-copper transition-colors">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-copper text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    </button>
+                    <button id="theme-toggle" aria-label="Toggle Theme" class="hover:text-copper transition-colors">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="hover:text-copper transition-colors"><i class="fa-solid fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-primary dark:bg-darkBg border-b border-gray-200 dark:border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium hover:text-copper">Home</a>
+                <a href="#categories" class="block px-3 py-2 text-base font-medium hover:text-copper">Categories</a>
+                <a href="#shop" class="block px-3 py-2 text-base font-medium hover:text-copper">Shop</a>
+                <a href="#showcase" class="block px-3 py-2 text-base font-medium hover:text-copper">Showcase</a>
+                <a href="#compare" class="block px-3 py-2 text-base font-medium hover:text-copper">Compare</a>
+                <a href="#guides" class="block px-3 py-2 text-base font-medium hover:text-copper">Guides</a>
+                <a href="#warranty" class="block px-3 py-2 text-base font-medium hover:text-copper">Warranty</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 2: Hero -->
+        <section id="home" class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/5 dark:bg-primary/5 text-sm font-medium mb-6">
+                        <i class="fa-solid fa-star text-copper text-xs"></i><span>Premium Audio Quality</span>
+                    </div>
+                    <h1 class="font-manrope text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                        Your Sound. <br/><span class="text-copper">Your Signature.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
+                        Discover precision-engineered audio gear designed for creators, storytellers, and professional podcasters.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#shop" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-white bg-secondary dark:bg-primary dark:text-secondary hover:bg-copper dark:hover:bg-copper transition-all shadow-lg hover:shadow-xl">Explore Equipment</a>
+                        <a href="#setup" class="inline-flex justify-center items-center px-8 py-4 border-2 border-secondary dark:border-primary text-base font-medium rounded-md hover:bg-secondary hover:text-white dark:hover:bg-primary dark:hover:text-secondary transition-all">Build Your Setup</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-copper/20 to-transparent rounded-3xl transform rotate-3 scale-105"></div>
+                    <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=1000&auto=format&fit=crop" alt="Premium Podcast Setup" class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Categories -->
+        <section id="categories" class="py-20 bg-secondary/5 dark:bg-darkCard/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Craft Your Experience</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Explore our premium collections tailored for uncompromising audio excellence.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=600&auto=format&fit=crop" alt="Microphones" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Studio Microphones</h3>
+                            <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Capture every nuance.</p>
+                            <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=600&auto=format&fit=crop" alt="Headphones" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Pro Headphones</h3>
+                            <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Reference-grade monitoring.</p>
+                            <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1516280440502-628d0093ef51?q=80&w=600&auto=format&fit=crop" alt="Interfaces" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Audio Interfaces</h3>
+                            <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">High-fidelity conversion.</p>
+                            <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1590602568603-9e421e4ea4db?q=80&w=600&auto=format&fit=crop" alt="Accessories" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h3 class="font-manrope text-xl font-bold text-white mb-2">Accessories</h3>
+                            <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Essential studio gear.</p>
+                            <span class="text-copper font-medium flex items-center gap-2 text-sm">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Featured Equipment -->
+        <section id="shop" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Featured Equipment</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Our highest-rated gear for professionals.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product 1 -->
+                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=400&auto=format&fit=crop" alt="Mic" class="h-40 w-auto object-contain">
+                            <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <div class="flex items-center gap-1 text-copper text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <span class="text-gray-500 dark:text-gray-400 ml-1">(128)</span>
+                            </div>
+                            <h3 class="font-manrope font-bold text-lg mb-1">SONAVEX Pro Mic</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Large-diaphragm condenser microphone.</p>
+                            <div class="flex items-center justify-between mt-auto">
+                                <span class="font-bold text-xl">$299.00</span>
+                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper dark:hover:bg-copper dark:hover:text-white transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop" alt="Headphones" class="h-40 w-auto object-contain">
+                            <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <div class="flex items-center gap-1 text-copper text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-gray-500 dark:text-gray-400 ml-1">(94)</span>
+                            </div>
+                            <h3 class="font-manrope font-bold text-lg mb-1">Monitor Headphones</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Closed-back reference headphones.</p>
+                            <div class="flex items-center justify-between mt-auto">
+                                <span class="font-bold text-xl">$199.00</span>
+                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop" alt="Interface" class="h-40 w-auto object-contain">
+                            <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <div class="flex items-center gap-1 text-copper text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <span class="text-gray-500 dark:text-gray-400 ml-1">(210)</span>
+                            </div>
+                            <h3 class="font-manrope font-bold text-lg mb-1">Audio Interface</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">2x2 USB-C Audio Interface with preamps.</p>
+                            <div class="flex items-center justify-between mt-auto">
+                                <span class="font-bold text-xl">$149.00</span>
+                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="bg-white dark:bg-darkCard rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <div class="relative mb-6 h-48 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=400&auto=format&fit=crop" alt="Kit" class="h-40 w-auto object-contain">
+                            <button class="absolute top-3 right-3 text-gray-400 hover:text-copper"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <div class="flex items-center gap-1 text-copper text-xs mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span class="text-gray-500 dark:text-gray-400 ml-1">(45)</span>
+                            </div>
+                            <h3 class="font-manrope font-bold text-lg mb-1">Podcast Kit</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex-grow">Complete bundle for beginner podcasters.</p>
+                            <div class="flex items-center justify-between mt-auto">
+                                <span class="font-bold text-xl">$399.00</span>
+                                <button class="add-to-cart bg-secondary text-white dark:bg-primary dark:text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-copper transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: 360 Showcase -->
+        <section id="showcase" class="py-20 bg-secondary text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="viewer-360-container h-[400px] lg:h-[500px] w-full relative cursor-grab flex items-center justify-center" title="Drag to rotate">
+                        <!-- Simulated 360 viewer using a nice image and 3D transform -->
+                        <div id="viewer-inner" class="viewer-360-inner w-64 h-64 md:w-80 md:h-80 relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=600&auto=format&fit=crop" alt="360 Mic View" class="w-full h-full object-contain pointer-events-none drop-shadow-2xl">
+                        </div>
+                        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
+                            <i class="fa-solid fa-arrows-left-right text-copper"></i> Drag to rotate
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-0">
+                        <span class="text-copper font-medium tracking-wider uppercase text-sm mb-4 block">Interactive Viewer</span>
+                        <h2 class="font-manrope text-3xl md:text-5xl font-bold mb-6">SONAVEX Pro Mic</h2>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-white/10 p-2 rounded-full text-copper shrink-0"><i class="fa-solid fa-microphone-lines"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Cardioid Polar Pattern</h4>
+                                    <p class="text-gray-400 text-sm">Rejects off-axis background noise perfectly.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-white/10 p-2 rounded-full text-copper shrink-0"><i class="fa-solid fa-sliders"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Built-in Pop Filter</h4>
+                                    <p class="text-gray-400 text-sm">Minimizes plosives for clear voice capture.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-white/10 p-2 rounded-full text-copper shrink-0"><i class="fa-solid fa-plug"></i></div>
+                                <div>
+                                    <h4 class="font-bold">USB-C & XLR Dual Output</h4>
+                                    <p class="text-gray-400 text-sm">Versatile connectivity for any setup.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="bg-copper hover:bg-white hover:text-secondary text-white px-8 py-3 rounded-lg font-medium transition-colors">View Specifications</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Compare -->
+        <section id="compare" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Compare Models</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Find the perfect match for your acoustic needs.</p>
+                </div>
+                <div class="overflow-x-auto pb-4">
+                    <table class="w-full min-w-[800px] text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-gray-200 dark:border-gray-800">
+                                <th class="p-4 font-manrope text-xl text-gray-500 w-1/4">Features</th>
+                                <th class="p-4 w-1/4">
+                                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2">
+                                    <h3 class="font-manrope font-bold text-lg">Pro Mic</h3>
+                                </th>
+                                <th class="p-4 w-1/4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10 rounded-t-xl relative">
+                                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-copper text-white text-xs px-3 py-1 rounded-full whitespace-nowrap">Most Popular</div>
+                                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2 mx-auto">
+                                    <h3 class="font-manrope font-bold text-lg text-center">Studio Mic</h3>
+                                </th>
+                                <th class="p-4 w-1/4">
+                                    <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=200&auto=format&fit=crop" class="h-20 object-contain mb-2">
+                                    <h3 class="font-manrope font-bold text-lg">Broadcast Mic</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                            <tr>
+                                <td class="p-4 font-medium text-gray-600 dark:text-gray-400">Frequency Response</td>
+                                <td class="p-4">20Hz - 20kHz</td>
+                                <td class="p-4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10">20Hz - 20kHz</td>
+                                <td class="p-4">50Hz - 20kHz</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-600 dark:text-gray-400">Connectivity</td>
+                                <td class="p-4">USB-C / XLR</td>
+                                <td class="p-4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10 text-copper font-medium">XLR Only</td>
+                                <td class="p-4">USB-C</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-600 dark:text-gray-400">Noise Isolation</td>
+                                <td class="p-4">Standard</td>
+                                <td class="p-4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10">Advanced Active</td>
+                                <td class="p-4">Standard</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-600 dark:text-gray-400">Warranty Period</td>
+                                <td class="p-4">1 Year</td>
+                                <td class="p-4 border-x border-copper/20 bg-copper/5 dark:bg-copper/10">3 Years</td>
+                                <td class="p-4">2 Years</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4"></td>
+                                <td class="p-4"><button class="text-copper font-medium hover:underline">Add to Cart</button></td>
+                                <td class="p-4 border-x border-b border-copper/20 bg-copper/5 dark:bg-copper/10 rounded-b-xl text-center"><button class="bg-copper text-white px-4 py-2 rounded-lg text-sm w-full hover:bg-secondary transition-colors">Add to Cart</button></td>
+                                <td class="p-4"><button class="text-copper font-medium hover:underline">Add to Cart</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Guides -->
+        <section id="guides" class="py-20 bg-secondary/5 dark:bg-darkCard/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Audio Mastery Guides</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Learn the science of sound with our expert articles.</p>
+                    </div>
+                    <button class="hidden md:inline-flex text-copper font-medium hover:text-secondary dark:hover:text-primary transition-colors items-center gap-2">View All Guides <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop" alt="Acoustics" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-xs font-bold uppercase text-copper mb-2 block">Room Acoustics</span>
+                            <h3 class="font-manrope font-bold text-xl mb-3">Mastering Room Treatment</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Learn how to eliminate echo and standing waves using simple acoustic panels in your home studio.</p>
+                            <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
+                        </div>
+                    </article>
+                    <article class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=600&auto=format&fit=crop" alt="Mics" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-xs font-bold uppercase text-copper mb-2 block">Microphones</span>
+                            <h3 class="font-manrope font-bold text-xl mb-3">Condenser vs. Dynamic</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Which microphone type is right for your podcasting style? We break down the technical differences.</p>
+                            <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
+                        </div>
+                    </article>
+                    <article class="bg-white dark:bg-darkCard rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop" alt="Headphones" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-xs font-bold uppercase text-copper mb-2 block">Monitoring</span>
+                            <h3 class="font-manrope font-bold text-xl mb-3">The Importance of Isolation</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Why closed-back headphones are essential for tracking vocals without microphone bleed.</p>
+                            <a href="#" class="text-secondary dark:text-primary font-medium text-sm hover:text-copper transition-colors mt-auto">Read Article</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Setup -->
+        <section id="setup" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-4">Build Your Podcast Setup</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Select a preset to match your creator journey or book an expert consultation.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-copper transition-colors text-center">
+                        <h3 class="font-manrope font-bold text-2xl mb-2">Beginner Creator</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm">Perfect for solo podcasting from a home desk.</p>
+                        <div class="text-3xl font-bold mb-6">$349 <span class="text-lg text-gray-400 font-normal">est.</span></div>
+                        <ul class="text-sm text-left space-y-3 mb-8">
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> USB Dynamic Microphone</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> Desktop Stand</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> Entry-level Headphones</li>
+                        </ul>
+                        <button class="w-full py-3 border border-secondary dark:border-primary rounded-lg font-medium hover:bg-secondary hover:text-white dark:hover:bg-primary dark:hover:text-secondary transition-colors">View Setup</button>
+                    </div>
+                    <div class="border-2 border-copper rounded-2xl p-8 relative text-center shadow-xl">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-copper text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Recommended</div>
+                        <h3 class="font-manrope font-bold text-2xl mb-2">Pro Podcaster</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm">Ideal for co-hosted shows with excellent fidelity.</p>
+                        <div class="text-3xl font-bold mb-6">$899 <span class="text-lg text-gray-400 font-normal">est.</span></div>
+                        <ul class="text-sm text-left space-y-3 mb-8">
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> 2x XLR Studio Microphones</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> 2-Channel Audio Interface</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> Studio Boom Arms</li>
+                        </ul>
+                        <button class="w-full py-3 bg-copper text-white rounded-lg font-medium hover:bg-secondary transition-colors">View Setup</button>
+                    </div>
+                    <div class="border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-copper transition-colors text-center">
+                        <h3 class="font-manrope font-bold text-2xl mb-2">Studio Production</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm">Broadcast-quality gear for serious networks.</p>
+                        <div class="text-3xl font-bold mb-6">$2,499 <span class="text-lg text-gray-400 font-normal">est.</span></div>
+                        <ul class="text-sm text-left space-y-3 mb-8">
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> 4x Broadcast Microphones</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> Multitrack Field Recorder</li>
+                            <li><i class="fa-solid fa-check text-copper mr-2"></i> Sound Treatment Kit</li>
+                        </ul>
+                        <button class="w-full py-3 border border-secondary dark:border-primary rounded-lg font-medium hover:bg-secondary hover:text-white dark:hover:bg-primary dark:hover:text-secondary transition-colors">View Setup</button>
+                    </div>
+                </div>
+
+                <div class="bg-secondary text-white rounded-3xl p-8 md:p-12 lg:flex lg:items-center lg:justify-between shadow-2xl">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0">
+                        <h3 class="font-manrope font-bold text-3xl mb-4">Need a Custom Setup?</h3>
+                        <p class="text-gray-300 mb-6">Book a free 30-minute consultation with our audio engineers to design a studio that fits your exact needs and budget.</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><i class="fa-regular fa-calendar-check mr-2 text-copper"></i> Flexible scheduling</li>
+                            <li><i class="fa-solid fa-headset mr-2 text-copper"></i> 1-on-1 expert advice</li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-5/12 bg-white dark:bg-darkCard rounded-2xl p-6 text-secondary dark:text-primary">
+                        <form id="booking-form" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Name</label>
+                                <input type="text" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent focus:outline-none focus:border-copper" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Email</label>
+                                <input type="email" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent focus:outline-none focus:border-copper" placeholder="john@example.com">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Date</label>
+                                    <input type="date" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent focus:outline-none focus:border-copper">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Time</label>
+                                    <select class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent focus:outline-none focus:border-copper">
+                                        <option>Morning</option>
+                                        <option>Afternoon</option>
+                                        <option>Evening</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full bg-copper text-white py-3 rounded-lg font-medium hover:bg-secondary dark:hover:bg-primary dark:hover:text-secondary transition-colors mt-2">Book Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Warranty -->
+        <section id="warranty" class="py-20 bg-secondary/5 dark:bg-darkCard/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
+                    <div class="mb-12 lg:mb-0">
+                        <h2 class="font-manrope text-3xl md:text-4xl font-bold mb-6">Warranty & Support</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-8">Register your SONAVEX equipment to activate your extended warranty, access premium support, and stay updated on firmware releases.</p>
+                        
+                        <div class="space-y-6 mb-8">
+                            <details class="group bg-white dark:bg-darkBg p-4 rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer">
+                                <summary class="font-medium list-none flex justify-between items-center">
+                                    How long is the warranty period?
+                                    <i class="fa-solid fa-chevron-down text-copper group-open:rotate-180 transition-transform"></i>
+                                </summary>
+                                <p class="text-sm text-gray-500 mt-3">All microphones and interfaces come with a standard 2-year warranty. Headphones include a 1-year warranty.</p>
+                            </details>
+                            <details class="group bg-white dark:bg-darkBg p-4 rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer">
+                                <summary class="font-medium list-none flex justify-between items-center">
+                                    How do I find my serial number?
+                                    <i class="fa-solid fa-chevron-down text-copper group-open:rotate-180 transition-transform"></i>
+                                </summary>
+                                <p class="text-sm text-gray-500 mt-3">The 12-digit serial number is located on the bottom of your device or on the original packaging barcode label.</p>
+                            </details>
+                            <details class="group bg-white dark:bg-darkBg p-4 rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer">
+                                <summary class="font-medium list-none flex justify-between items-center">
+                                    What is covered under warranty?
+                                    <i class="fa-solid fa-chevron-down text-copper group-open:rotate-180 transition-transform"></i>
+                                </summary>
+                                <p class="text-sm text-gray-500 mt-3">Manufacturer defects and hardware failures are fully covered. Accidental damage or cosmetic wear is not covered.</p>
+                            </details>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-darkCard rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+                        <h3 class="font-manrope font-bold text-2xl mb-6">Register Product</h3>
+                        <form id="warranty-form" class="space-y-5">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Full Name</label>
+                                    <input type="text" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-darkBg focus:bg-white dark:focus:bg-darkCard transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Email Address</label>
+                                    <input type="email" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-darkBg focus:bg-white dark:focus:bg-darkCard transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-1">Product Model</label>
+                                <select required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-darkBg focus:bg-white dark:focus:bg-darkCard transition-colors">
+                                    <option value="" disabled selected>Select your product</option>
+                                    <option>SONAVEX Pro Mic</option>
+                                    <option>SONAVEX Studio Mic</option>
+                                    <option>SONAVEX Monitor Headphones</option>
+                                    <option>SONAVEX Audio Interface 2x2</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Serial Number</label>
+                                    <input type="text" required pattern="[A-Za-z0-9]{10,15}" placeholder="e.g. SNVX12345678" class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-darkBg focus:bg-white dark:focus:bg-darkCard transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Purchase Date</label>
+                                    <input type="date" required class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-darkBg focus:bg-white dark:focus:bg-darkCard transition-colors">
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full bg-secondary text-white dark:bg-primary dark:text-secondary py-3 rounded-lg font-medium hover:bg-copper dark:hover:bg-copper dark:hover:text-white transition-colors mt-4">Register Warranty</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Section 10: Footer -->
+    <footer class="bg-gray-100 dark:bg-secondary text-gray-600 dark:text-gray-300 pt-16 pb-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="#home" class="flex items-center gap-2 mb-6 text-secondary dark:text-white group">
+                        <i class="fa-solid fa-wave-square text-copper text-2xl"></i>
+                        <span class="font-manrope font-bold text-2xl tracking-tight">SONAVEX</span>
+                    </a>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Precision-engineered audio gear designed for creators, storytellers, and professional podcasters.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center hover:bg-copper hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center hover:bg-copper hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center hover:bg-copper hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-white/10 flex items-center justify-center hover:bg-copper hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-manrope font-bold text-secondary dark:text-white text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="hover:text-copper transition-colors">Home</a></li>
+                        <li><a href="#shop" class="hover:text-copper transition-colors">Shop Gear</a></li>
+                        <li><a href="#compare" class="hover:text-copper transition-colors">Compare Products</a></li>
+                        <li><a href="#guides" class="hover:text-copper transition-colors">Audio Guides</a></li>
+                        <li><a href="#warranty" class="hover:text-copper transition-colors">Warranty Registration</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-manrope font-bold text-secondary dark:text-white text-lg mb-6">Customer Support</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-copper transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-copper transition-colors">FAQs</a></li>
+                        <li><a href="#" class="hover:text-copper transition-colors">Shipping Information</a></li>
+                        <li><a href="#" class="hover:text-copper transition-colors">Returns Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-manrope font-bold text-secondary dark:text-white text-lg mb-6">Stay Tuned</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Subscribe to get special offers, free giveaways, and new product announcements.</p>
+                    <form id="newsletter-form" class="relative">
+                        <input type="email" required placeholder="Enter your email" class="w-full bg-white dark:bg-white/5 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-sm text-secondary dark:text-white focus:outline-none focus:border-copper pr-24">
+                        <button type="submit" class="absolute right-1 top-1 bottom-1 bg-copper text-white px-4 rounded-md text-sm font-medium hover:bg-secondary dark:hover:bg-white hover:text-white dark:hover:text-secondary transition-colors">Subscribe</button>
+                    </form>
+                    <div class="mt-6 text-sm text-gray-500 dark:text-gray-400">
+                        <p><i class="fa-solid fa-envelope text-copper mr-2"></i> support@sonavex.audio</p>
+                        <p class="mt-2"><i class="fa-solid fa-phone text-copper mr-2"></i> +1 (800) 555-0199</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> SONAVEX. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-secondary dark:hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
