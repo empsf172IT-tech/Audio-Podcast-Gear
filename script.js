@@ -83,6 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Cart Drawer logic
+    const cartBtn = document.getElementById('cart-btn');
+    const cartModal = document.getElementById('cart-modal');
+    const cartDrawer = document.getElementById('cart-drawer');
+    const closeCartBtn = document.getElementById('close-cart');
+    const cartOverlay = document.getElementById('cart-overlay');
+    const shopNowBtn = document.getElementById('shop-now-btn');
+
+    function openCart() {
+        if (cartModal && cartDrawer) {
+            cartModal.classList.remove('hidden');
+            setTimeout(() => {
+                cartDrawer.classList.remove('translate-x-full');
+            }, 10);
+        }
+    }
+
+    function closeCart() {
+        if (cartModal && cartDrawer) {
+            cartDrawer.classList.add('translate-x-full');
+            setTimeout(() => {
+                cartModal.classList.add('hidden');
+            }, 300);
+        }
+    }
+
+    if (cartBtn) cartBtn.addEventListener('click', openCart);
+    if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+    if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+    if (shopNowBtn) shopNowBtn.addEventListener('click', () => {
+        closeCart();
+        window.location.href = '#shop';
+    });
+
     // 6. 360 Viewer logic (Simulated Drag)
     const viewerInner = document.getElementById('viewer-inner');
     if (viewerInner) {

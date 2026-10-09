@@ -52,8 +52,7 @@
                     <a href="#warranty" class="nav-link font-medium text-sm hover:text-copper transition-colors">Warranty</a>
                 </nav>
                 <div class="hidden md:flex items-center space-x-6">
-                    <button aria-label="Search" class="hover:text-copper transition-colors"><i class="fa-solid fa-search"></i></button>
-                    <button aria-label="Cart" class="relative hover:text-copper transition-colors">
+                    <button id="cart-btn" aria-label="Cart" class="relative hover:text-copper transition-colors">
                         <i class="fa-solid fa-shopping-cart"></i>
                         <span id="cart-count" class="absolute -top-2 -right-2 bg-copper text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
                     </button>
@@ -132,7 +131,7 @@
                         </div>
                     </a>
                     <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1516280440502-628d0093ef51?q=80&w=600&auto=format&fit=crop" alt="Interfaces" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop" alt="Interfaces" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
                             <h3 class="font-manrope text-xl font-bold text-white mb-2">Audio Interfaces</h3>
@@ -141,7 +140,7 @@
                         </div>
                     </a>
                     <a href="#shop" class="group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1590602568603-9e421e4ea4db?q=80&w=600&auto=format&fit=crop" alt="Accessories" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?q=80&w=600&auto=format&fit=crop" alt="Accessories" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 w-full">
                             <h3 class="font-manrope text-xl font-bold text-white mb-2">Accessories</h3>
@@ -616,6 +615,31 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cart Drawer Modal -->
+    <div id="cart-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" id="cart-overlay"></div>
+        <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white dark:bg-darkCard shadow-2xl transform translate-x-full transition-transform duration-300" id="cart-drawer">
+            <div class="p-6 flex flex-col h-full">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-manrope text-2xl font-bold">Your Cart</h3>
+                    <button id="close-cart" class="text-gray-500 hover:text-copper transition-colors"><i class="fa-solid fa-times text-xl"></i></button>
+                </div>
+                <div class="flex-grow flex flex-col items-center justify-center text-gray-500 dark:text-gray-400" id="empty-cart-msg">
+                    <i class="fa-solid fa-shopping-cart text-5xl mb-4 opacity-50"></i>
+                    <p>Your cart is empty.</p>
+                    <button id="shop-now-btn" class="mt-6 border border-copper text-copper hover:bg-copper hover:text-white px-6 py-2 rounded-lg transition-colors font-medium">Shop Now</button>
+                </div>
+                <div class="mt-auto pt-6 border-t border-gray-200 dark:border-gray-800">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="font-bold text-lg">Total</span>
+                        <span class="font-bold text-xl text-copper">$0.00</span>
+                    </div>
+                    <button class="w-full bg-secondary text-white dark:bg-primary dark:text-secondary py-3 rounded-lg font-medium hover:bg-copper dark:hover:bg-copper dark:hover:text-white transition-colors cursor-not-allowed opacity-50" disabled>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
